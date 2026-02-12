@@ -65,12 +65,12 @@ cd $HOME\Downloads
 
 Extract:
 
-Expand-Archive .\agnos-devops-assignment-production.zip
+Expand-Archive .\devops-assignment-main.zip
 
 
 Enter folder:
 
-cd .\agnos-devops-assignment-prod
+cd .\devops-assignment-main
 
 
 Check structure:
@@ -262,7 +262,7 @@ If CPU threshold triggered → replicas increase.
 
 This validates auto-scaling capability.
 
-🔥 PHASE 8 — Failure Testing (Important for Interview)
+🔥 PHASE 8 — Failure Testing
 🧨 Test API Crash
 
 Delete pod:
@@ -275,7 +275,7 @@ Immediately check:
 kubectl get pods -w
 
 
-New pod should recreate automatically.
+New pod recreate automatically.
 
 This proves:
 
