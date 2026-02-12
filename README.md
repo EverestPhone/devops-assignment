@@ -247,7 +247,7 @@ kubectl get pods -n kube-system
 Open new PowerShell:
 
 for ($i=0; $i -lt 300; $i++) {
-    curl http://localhost:8080/health | Out-Null
+    Invoke-WebRequest -Uri "http://localhost:8080/health" -UseBasicParsing | Out-Null
 }
 
 
